@@ -1,11 +1,9 @@
+import * as fs from 'fs'
 import { formatUnixDate } from "./helpers/formatUnixDate";
 import { generateRandomValue } from "./helpers/generateRandomValue";
 import { unixGeneratorDate } from "./helpers/unixGenerator";
 
 function fakeDataGenerator(inicio, final) {
-  console.log('inicio: ', inicio)
-  console.log('final: ', final)
-
   const dataFakeArray = [];
     for (let i = 0; i < inicio.length; i++) {
     const objectREAL = {
@@ -40,6 +38,11 @@ const largo = responseStart.longitud
 const responseEnd = unixGeneratorDate(1704652799, 1735497599, 'semanal')
 const final = responseEnd.fechas
 
-console.log(fakeDataGenerator(inicio, final))
+const fakeData = fakeDataGenerator(inicio, final)
+const jsonData = JSON.stringify(fakeData, null, 2)
+const filePath = './dataFake/exportedFakeData.txt'
+fs.writeFileSync(filePath,jsonData)
+
+console.log(`FakeData guardada en: ${filePath}`)
 
 
