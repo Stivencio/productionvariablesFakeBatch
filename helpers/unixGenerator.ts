@@ -1,8 +1,6 @@
-type Interval = 'YEAR' | 'MONTH' | 'WEEK' | 'DAY' | 'HOUR' | '15MINUTES' | '1MINUTE'
+import { Interval } from "../types/IntervalT";
 
 export const unixGeneratorDate = (initialDate: number, finalDate: any, interval: Interval) => {
-    // const fechas: any = []
-
     const fechasInicio: number[] = []
     const fechasFin: number[] = []
 
@@ -16,7 +14,6 @@ export const unixGeneratorDate = (initialDate: number, finalDate: any, interval:
               }
               break;
         // Agregar otros intervalos aquí
-
         default:
             throw new Error(`Intervalo no soportado: ${interval}`);
     }
