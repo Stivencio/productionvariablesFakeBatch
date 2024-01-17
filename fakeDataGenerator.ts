@@ -2,8 +2,15 @@ import * as fs from 'fs'
 import { formatUnixDate } from "./helpers/formatUnixDate";
 import { generateRandomValue } from "./helpers/generateRandomValue";
 import { unixGeneratorDate } from "./helpers/unixGenerator";
+import { Interval } from './types/IntervalT';
 
-function fakeDataGenerator(inicio, final, _id) {
+function fakeDataGenerator(initialDate: number, finalDate: number, interval:Interval, _id: string) {
+  
+  const response = unixGeneratorDate(initialDate, finalDate, interval)
+
+  const inicio = response.fechasInicio
+  const final = response.fechasFin
+  
   const dataFakeArray = [];
     for (let i = 0; i < inicio.length; i++) {
     const objectREAL = {
@@ -27,19 +34,11 @@ function fakeDataGenerator(inicio, final, _id) {
     
     dataFakeArray.push(objectREAL, objectPROJECTED);
   }
-  
-  return dataFakeArray;
+  const jsonData = JSON.stringify(dataFakeArray, null, 2)
+  const filePath = './dataFake/exportedFakeData.txt'
+  fs.writeFileSync(filePath,jsonData)
+  console.log(`FakeData guardada en: ${filePath}`)
 }
 
-// Recibe fecha de inicio y fin en formato unix y el intérvalo de tiempo
-const response = unixGeneratorDate(1704067200, 1735497599, 'WEEK')
 
-const inicio = response.fechasInicio
-const final = response.fechasFin
-const fakeData = fakeDataGenerator(inicio, final, '65a6bfd3de7cb55de5b345c8')
-const jsonData = JSON.stringify(fakeData, null, 2)
-const filePath = './dataFake/exportedFakeData.txt'
-fs.writeFileSync(filePath,jsonData)
-console.log(`FakeData guardada en: ${filePath}`)
-
-
+fakeDataGenerator(1704067200, 1735497599, 'WEEK', '65a6bfd3de7cb55de5b345c8' )
