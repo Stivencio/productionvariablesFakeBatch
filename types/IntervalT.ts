@@ -1,0 +1,1 @@
+export type Interval = 'YEAR' | 'MONTH' | 'WEEK' | 'DAY' | 'HOUR' | '15MINUTES' | '1MINUTE'
