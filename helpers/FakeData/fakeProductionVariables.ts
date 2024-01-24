@@ -50,7 +50,7 @@ export const fakeEnergyConsumptions = (initialDate: number, finalDate: number, i
     const dataFakeArray = [];
     for (let i = 0; i < inicio.length; i++) {
       const objectREAL = {
-        _id: `${_idUse}_REAL`,
+        _id: `${_idUse}`,
         insertDate: formatUnixDate(inicio[i]),
         startDate: inicio[i],
         endDate: final[i],
