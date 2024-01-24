@@ -1,3 +1,5 @@
 node_modules
 /dataFake/*
-!/dataFake/.gitkeep
+!/dataFake/energy-consumptions-insertBatch/.gitkeep
+!/dataFake/estimated-deviation/.gitkeep
+!/dataFake/production-variables-batch-production-variable/.gitkeep
