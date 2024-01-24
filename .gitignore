@@ -1,6 +1,4 @@
 node_modules
 /dataFake/*
-/dataFake/*/*
 !/dataFake/*/
-!/dataFake/*/.*
 !/dataFake/.gitkeep

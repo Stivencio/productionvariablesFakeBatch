@@ -1,0 +1,434 @@
+[
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-01-01 03:00:00",
+    "startDate": 1609470000,
+    "endDate": 1612148399,
+    "value": 182,
+    "measureType": "REAL",
+    "timestamp": 1609470000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-01-01 03:00:00",
+    "startDate": 1609470000,
+    "endDate": 1612148399,
+    "value": 1845,
+    "measureType": "PROJECTED",
+    "timestamp": 1609470000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-02-01 03:00:00",
+    "startDate": 1612148400,
+    "endDate": 1614567599,
+    "value": 65,
+    "measureType": "REAL",
+    "timestamp": 1612148400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-02-01 03:00:00",
+    "startDate": 1612148400,
+    "endDate": 1614567599,
+    "value": 1881,
+    "measureType": "PROJECTED",
+    "timestamp": 1612148400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-03-01 03:00:00",
+    "startDate": 1614567600,
+    "endDate": 1617245999,
+    "value": 121,
+    "measureType": "REAL",
+    "timestamp": 1614567600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-03-01 03:00:00",
+    "startDate": 1614567600,
+    "endDate": 1617245999,
+    "value": 1811,
+    "measureType": "PROJECTED",
+    "timestamp": 1614567600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-04-01 03:00:00",
+    "startDate": 1617246000,
+    "endDate": 1619841599,
+    "value": 164,
+    "measureType": "REAL",
+    "timestamp": 1617246000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-04-01 03:00:00",
+    "startDate": 1617246000,
+    "endDate": 1619841599,
+    "value": 1925,
+    "measureType": "PROJECTED",
+    "timestamp": 1617246000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-05-01 04:00:00",
+    "startDate": 1619841600,
+    "endDate": 1622519999,
+    "value": 168,
+    "measureType": "REAL",
+    "timestamp": 1619841600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-05-01 04:00:00",
+    "startDate": 1619841600,
+    "endDate": 1622519999,
+    "value": 1891,
+    "measureType": "PROJECTED",
+    "timestamp": 1619841600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-06-01 04:00:00",
+    "startDate": 1622520000,
+    "endDate": 1625111999,
+    "value": 179,
+    "measureType": "REAL",
+    "timestamp": 1622520000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-06-01 04:00:00",
+    "startDate": 1622520000,
+    "endDate": 1625111999,
+    "value": 1136,
+    "measureType": "PROJECTED",
+    "timestamp": 1622520000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-07-01 04:00:00",
+    "startDate": 1625112000,
+    "endDate": 1627790399,
+    "value": 105,
+    "measureType": "REAL",
+    "timestamp": 1625112000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-07-01 04:00:00",
+    "startDate": 1625112000,
+    "endDate": 1627790399,
+    "value": 1028,
+    "measureType": "PROJECTED",
+    "timestamp": 1625112000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-08-01 04:00:00",
+    "startDate": 1627790400,
+    "endDate": 1630468799,
+    "value": 57,
+    "measureType": "REAL",
+    "timestamp": 1627790400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-08-01 04:00:00",
+    "startDate": 1627790400,
+    "endDate": 1630468799,
+    "value": 1817,
+    "measureType": "PROJECTED",
+    "timestamp": 1627790400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-09-01 04:00:00",
+    "startDate": 1630468800,
+    "endDate": 1633057199,
+    "value": 189,
+    "measureType": "REAL",
+    "timestamp": 1630468800
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-09-01 04:00:00",
+    "startDate": 1630468800,
+    "endDate": 1633057199,
+    "value": 1056,
+    "measureType": "PROJECTED",
+    "timestamp": 1630468800
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-10-01 03:00:00",
+    "startDate": 1633057200,
+    "endDate": 1635735599,
+    "value": 152,
+    "measureType": "REAL",
+    "timestamp": 1633057200
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-10-01 03:00:00",
+    "startDate": 1633057200,
+    "endDate": 1635735599,
+    "value": 1782,
+    "measureType": "PROJECTED",
+    "timestamp": 1633057200
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-11-01 03:00:00",
+    "startDate": 1635735600,
+    "endDate": 1638327599,
+    "value": 106,
+    "measureType": "REAL",
+    "timestamp": 1635735600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-11-01 03:00:00",
+    "startDate": 1635735600,
+    "endDate": 1638327599,
+    "value": 1921,
+    "measureType": "PROJECTED",
+    "timestamp": 1635735600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2021-12-01 03:00:00",
+    "startDate": 1638327600,
+    "endDate": 1641005999,
+    "value": 81,
+    "measureType": "REAL",
+    "timestamp": 1638327600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2021-12-01 03:00:00",
+    "startDate": 1638327600,
+    "endDate": 1641005999,
+    "value": 1718,
+    "measureType": "PROJECTED",
+    "timestamp": 1638327600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-01-01 03:00:00",
+    "startDate": 1641006000,
+    "endDate": 1643684399,
+    "value": 88,
+    "measureType": "REAL",
+    "timestamp": 1641006000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-01-01 03:00:00",
+    "startDate": 1641006000,
+    "endDate": 1643684399,
+    "value": 1159,
+    "measureType": "PROJECTED",
+    "timestamp": 1641006000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-02-01 03:00:00",
+    "startDate": 1643684400,
+    "endDate": 1646103599,
+    "value": 3,
+    "measureType": "REAL",
+    "timestamp": 1643684400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-02-01 03:00:00",
+    "startDate": 1643684400,
+    "endDate": 1646103599,
+    "value": 1612,
+    "measureType": "PROJECTED",
+    "timestamp": 1643684400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-03-01 03:00:00",
+    "startDate": 1646103600,
+    "endDate": 1648781999,
+    "value": 155,
+    "measureType": "REAL",
+    "timestamp": 1646103600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-03-01 03:00:00",
+    "startDate": 1646103600,
+    "endDate": 1648781999,
+    "value": 1339,
+    "measureType": "PROJECTED",
+    "timestamp": 1646103600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-04-01 03:00:00",
+    "startDate": 1648782000,
+    "endDate": 1651377599,
+    "value": 150,
+    "measureType": "REAL",
+    "timestamp": 1648782000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-04-01 03:00:00",
+    "startDate": 1648782000,
+    "endDate": 1651377599,
+    "value": 1176,
+    "measureType": "PROJECTED",
+    "timestamp": 1648782000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-05-01 04:00:00",
+    "startDate": 1651377600,
+    "endDate": 1654055999,
+    "value": 94,
+    "measureType": "REAL",
+    "timestamp": 1651377600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-05-01 04:00:00",
+    "startDate": 1651377600,
+    "endDate": 1654055999,
+    "value": 1015,
+    "measureType": "PROJECTED",
+    "timestamp": 1651377600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-06-01 04:00:00",
+    "startDate": 1654056000,
+    "endDate": 1656647999,
+    "value": 2,
+    "measureType": "REAL",
+    "timestamp": 1654056000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-06-01 04:00:00",
+    "startDate": 1654056000,
+    "endDate": 1656647999,
+    "value": 1069,
+    "measureType": "PROJECTED",
+    "timestamp": 1654056000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-07-01 04:00:00",
+    "startDate": 1656648000,
+    "endDate": 1659326399,
+    "value": 118,
+    "measureType": "REAL",
+    "timestamp": 1656648000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-07-01 04:00:00",
+    "startDate": 1656648000,
+    "endDate": 1659326399,
+    "value": 1056,
+    "measureType": "PROJECTED",
+    "timestamp": 1656648000
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-08-01 04:00:00",
+    "startDate": 1659326400,
+    "endDate": 1662004799,
+    "value": 158,
+    "measureType": "REAL",
+    "timestamp": 1659326400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-08-01 04:00:00",
+    "startDate": 1659326400,
+    "endDate": 1662004799,
+    "value": 1551,
+    "measureType": "PROJECTED",
+    "timestamp": 1659326400
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-09-01 04:00:00",
+    "startDate": 1662004800,
+    "endDate": 1664593199,
+    "value": 187,
+    "measureType": "REAL",
+    "timestamp": 1662004800
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-09-01 04:00:00",
+    "startDate": 1662004800,
+    "endDate": 1664593199,
+    "value": 1280,
+    "measureType": "PROJECTED",
+    "timestamp": 1662004800
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-10-01 03:00:00",
+    "startDate": 1664593200,
+    "endDate": 1667271599,
+    "value": 186,
+    "measureType": "REAL",
+    "timestamp": 1664593200
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-10-01 03:00:00",
+    "startDate": 1664593200,
+    "endDate": 1667271599,
+    "value": 1844,
+    "measureType": "PROJECTED",
+    "timestamp": 1664593200
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-11-01 03:00:00",
+    "startDate": 1667271600,
+    "endDate": 1669863599,
+    "value": 122,
+    "measureType": "REAL",
+    "timestamp": 1667271600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-11-01 03:00:00",
+    "startDate": 1667271600,
+    "endDate": 1669863599,
+    "value": 1459,
+    "measureType": "PROJECTED",
+    "timestamp": 1667271600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_REAL",
+    "insertDate": "2022-12-01 03:00:00",
+    "startDate": 1669863600,
+    "endDate": 1672541999,
+    "value": 165,
+    "measureType": "REAL",
+    "timestamp": 1669863600
+  },
+  {
+    "_id": "65b0b3490b79ffb51a1e82b9_PROJECTED",
+    "insertDate": "2022-12-01 03:00:00",
+    "startDate": 1669863600,
+    "endDate": 1672541999,
+    "value": 1655,
+    "measureType": "PROJECTED",
+    "timestamp": 1669863600
+  }
+]
