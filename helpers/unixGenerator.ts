@@ -45,6 +45,30 @@ export const unixGeneratorDate = (initialDate: number, finalDate: any, interval:
                 currentDateDay += 86400; // 1 día en segundos (24 horas * 60 minutos * 60 segundos)
                 }
             break;        
+        case 'HOUR':
+            let currentDateHour = initialDate;
+            while (currentDateHour <= finalDate) {
+            fechasInicio.push(currentDateHour);
+            fechasFin.push(currentDateHour + 3599); // Fin de la hora (3600 - 1)
+            currentDateHour += 3600; // 1 hora en segundos (60 minutos * 60 segundos)
+            }
+            break;         
+        case '15 MINUTES':
+            let currentDateQuarterHour = initialDate;
+            while (currentDateQuarterHour <= finalDate) {
+            fechasInicio.push(currentDateQuarterHour);
+            fechasFin.push(currentDateQuarterHour + 899); // Fin de los 15 minutos (900 - 1)
+            currentDateQuarterHour += 900; // 15 minutos en segundos (15 minutos * 60 segundos)
+            }
+            break;       
+        case '1 MINUTE':
+            let currentDateMinute = initialDate;
+            while (currentDateMinute <= finalDate) {
+            fechasInicio.push(currentDateMinute);
+            fechasFin.push(currentDateMinute + 59); // Fin del minuto (60 - 1)
+            currentDateMinute += 60; // 1 minuto en segundos (1 minutos * 60 segundos)
+            }
+            break;       
         // Agregar otros intervalos aquí
         default:
             throw new Error(`Intervalo no soportado: ${interval}`);
