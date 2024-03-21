@@ -4,6 +4,26 @@ import { generateRandomValue } from "../generateRandomValue";
 import { unixGeneratorDate } from "../unixGenerator";
 import { Interval } from '../../types/IntervalT';
 
+const MAX_FILE_SIZE_BYTES = 80000; // 85 KB
+
+const writeJSONToFile = (filePath: string, data: any[]) => {
+  const jsonData = JSON.stringify(data, null, 2);
+  fs.writeFileSync(filePath, jsonData);
+  console.log(`Data saved at: ${filePath}`);
+};
+
+const splitAndWriteJSONToFile = (filePath: string, data: any[]) => {
+  const chunks = Math.ceil(Buffer.byteLength(JSON.stringify(data)) / MAX_FILE_SIZE_BYTES);
+  const chunkSize = Math.ceil(data.length / chunks);
+  let offset = 0;
+
+  for (let i = 0; i < chunks; i++) {
+      const chunkData = data.slice(offset, offset + chunkSize);
+      writeJSONToFile(`${filePath}_${i + 1}.txt`, chunkData);
+      offset += chunkSize;
+  }
+};
+
 export const fakeProductionVariables = (initialDate: number, finalDate: number, interval: Interval, _ids: string[]) => {
   _ids.forEach(_id => {
     const response = unixGeneratorDate(initialDate, finalDate, interval)
@@ -34,10 +54,12 @@ export const fakeProductionVariables = (initialDate: number, finalDate: number, 
     
       dataFakeArray.push(objectREAL, objectPROJECTED);
     }
-    const jsonData = JSON.stringify(dataFakeArray, null, 2)
-    const filePath = `./dataFake/production-variables-batch-production-variable/${interval}_${_id}.txt`
-    fs.writeFileSync(filePath, jsonData)
-    console.log(`ProductionVariables for ${_id} saved at: ${filePath}`)
+    const filePath = `./dataFake/production-variables-batch-production-variable/${interval}_${_id}.txt`;
+    if (Buffer.byteLength(JSON.stringify(dataFakeArray)) > MAX_FILE_SIZE_BYTES) {
+        splitAndWriteJSONToFile(filePath, dataFakeArray);
+    } else {
+        writeJSONToFile(filePath, dataFakeArray);
+    }
   });
 };
 
@@ -60,36 +82,38 @@ export const fakeEnergyConsumptions = (initialDate: number, finalDate: number, i
         measureValue: "kWh",
         approved: true
       };
-      const objectESTIMATED = {
-        _id: `${_idUse}_ESTIMATED`,
-        insertDate: formatUnixDate(inicio[i]),
-        startDate: inicio[i],
-        endDate: final[i],
-        value: generateRandomValue(1000, 140000, 4),
-        measureType: "ESTIMATED",
-        timestamp: inicio[i],
-        measureValue: "kWh",
-        approved: true
-      };
-      const objectPROJECTED = {
-        _id: `${_idUse}_PROJECTED`,
-        insertDate: formatUnixDate(inicio[i]),
-        startDate: inicio[i],
-        endDate: final[i],
-        value: generateRandomValue(1000, 140000, 4),
-        measureType: "PROJECTED",
-        timestamp: inicio[i],
-        measureValue: "kWh",
-        approved: true
-      };
+      // const objectESTIMATED = {
+      //   _id: `${_idUse}_ESTIMATED`,
+      //   insertDate: formatUnixDate(inicio[i]),
+      //   startDate: inicio[i],
+      //   endDate: final[i],
+      //   value: generateRandomValue(1000, 140000, 4),
+      //   measureType: "ESTIMATED",
+      //   timestamp: inicio[i],
+      //   measureValue: "kWh",
+      //   approved: true
+      // };
+      // const objectPROJECTED = {
+      //   _id: `${_idUse}_PROJECTED`,
+      //   insertDate: formatUnixDate(inicio[i]),
+      //   startDate: inicio[i],
+      //   endDate: final[i],
+      //   value: generateRandomValue(1000, 140000, 4),
+      //   measureType: "PROJECTED",
+      //   timestamp: inicio[i],
+      //   measureValue: "kWh",
+      //   approved: true
+      // };
     
-      dataFakeArray.push(objectREAL, objectESTIMATED, objectPROJECTED);
+      // dataFakeArray.push(objectREAL, objectESTIMATED, objectPROJECTED);
+      dataFakeArray.push(objectREAL);
     }
-    const jsonData = JSON.stringify(dataFakeArray, null, 2)
-    const filePath = `./dataFake/energy-consumptions-insertBatch/${interval}_${_idUse}.txt`
-    fs.writeFileSync(filePath, jsonData)
-    console.log(`EnergyConsumptions for ${_idUse} saved at: ${filePath}`)
-
+    const filePath = `./dataFake/energy-consumptions-insertBatch/${interval}_${_idUse}.txt`;
+    if (Buffer.byteLength(JSON.stringify(dataFakeArray)) > MAX_FILE_SIZE_BYTES) {
+        splitAndWriteJSONToFile(filePath, dataFakeArray);
+    } else {
+        writeJSONToFile(filePath, dataFakeArray);
+    }
 }
 
 export const fakeEstimatedDeviation = (initialDate: number, finalDate: number, interval: Interval, _idUse:string) => {
@@ -111,9 +135,10 @@ export const fakeEstimatedDeviation = (initialDate: number, finalDate: number, i
   
     dataFakeArray.push(objectDeviation);
   }
-  const jsonData = JSON.stringify(dataFakeArray, null, 2)
-  const filePath = `./dataFake/estimated-deviation/${interval}_${_idUse}.txt`
-  fs.writeFileSync(filePath, jsonData)
-  console.log(`fakeEstimatedDeviation for ${_idUse} saved at: ${filePath}`)
-
+  const filePath = `./dataFake/estimated-deviation/${interval}_${_idUse}.txt`;
+  if (Buffer.byteLength(JSON.stringify(dataFakeArray)) > MAX_FILE_SIZE_BYTES) {
+      splitAndWriteJSONToFile(filePath, dataFakeArray);
+  } else {
+      writeJSONToFile(filePath, dataFakeArray);
+  }
 }
