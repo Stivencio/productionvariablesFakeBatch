@@ -63,7 +63,7 @@ export const fakeProductionVariables = (initialDate: number, finalDate: number, 
   });
 };
 
-export const fakeEnergyConsumptions = (initialDate: number, finalDate: number, interval: Interval, _idUse:string) => {
+export const fakeEnergyConsumptions = (initialDate: number, finalDate: number, interval: Interval, _idUse:string, useEnergyFake: boolean) => {
     const response = unixGeneratorDate(initialDate, finalDate, interval)
 
     const inicio = response.fechasInicio
@@ -82,31 +82,32 @@ export const fakeEnergyConsumptions = (initialDate: number, finalDate: number, i
         measureValue: "kWh",
         approved: true
       };
-      // const objectESTIMATED = {
-      //   _id: `${_idUse}_ESTIMATED`,
-      //   insertDate: formatUnixDate(inicio[i]),
-      //   startDate: inicio[i],
-      //   endDate: final[i],
-      //   value: generateRandomValue(1000, 140000, 4),
-      //   measureType: "ESTIMATED",
-      //   timestamp: inicio[i],
-      //   measureValue: "kWh",
-      //   approved: true
-      // };
-      // const objectPROJECTED = {
-      //   _id: `${_idUse}_PROJECTED`,
-      //   insertDate: formatUnixDate(inicio[i]),
-      //   startDate: inicio[i],
-      //   endDate: final[i],
-      //   value: generateRandomValue(1000, 140000, 4),
-      //   measureType: "PROJECTED",
-      //   timestamp: inicio[i],
-      //   measureValue: "kWh",
-      //   approved: true
-      // };
-    
-      // dataFakeArray.push(objectREAL, objectESTIMATED, objectPROJECTED);
+      const objectESTIMATED = {
+        _id: `${_idUse}_ESTIMATED`,
+        insertDate: formatUnixDate(inicio[i]),
+        startDate: inicio[i],
+        endDate: final[i],
+        value: generateRandomValue(1000, 140000, 4),
+        measureType: "ESTIMATED",
+        timestamp: inicio[i],
+        measureValue: "kWh",
+        approved: true
+      };
+      const objectPROJECTED = {
+        _id: `${_idUse}_PROJECTED`,
+        insertDate: formatUnixDate(inicio[i]),
+        startDate: inicio[i],
+        endDate: final[i],
+        value: generateRandomValue(1000, 140000, 4),
+        measureType: "PROJECTED",
+        timestamp: inicio[i],
+        measureValue: "kWh",
+        approved: true
+      };
       dataFakeArray.push(objectREAL);
+      if (useEnergyFake) {
+        dataFakeArray.push(objectESTIMATED, objectPROJECTED);
+      }      
     }
     const filePath = `./dataFake/energy-consumptions-insertBatch/${interval}_${_idUse}.txt`;
     if (Buffer.byteLength(JSON.stringify(dataFakeArray)) > MAX_FILE_SIZE_BYTES) {
