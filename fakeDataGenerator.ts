@@ -1,11 +1,12 @@
 import { fakeEnergyConsumptions, fakeEstimatedDeviation, fakeProductionVariables } from "./helpers/FakeData/fakeProductionVariables";
 
-const Inicio = 1713571200
-const Fin = 1713657600
+const Inicio = 1672531261
+const Fin = 1685577661
 const Periodo = '15 MINUTES'
-const _idUse = "65fc7819da56a3e6ad784e30"
-const _idProductionVariables = ["65fc78a7da56a3e6ad784e41","65fc78afda56a3e6ad784e45"]
+const _idUse = "67b62cb8e6f335a1f3282c91"
+const _idProductionVariables = ["67b62de6e6f335a1f3282c96","67b62e0de6f335a1f3282ca0"]
+const useEnergyFake = false
 
 fakeProductionVariables(Inicio, Fin, Periodo, _idProductionVariables)
-fakeEnergyConsumptions(Inicio, Fin, Periodo, _idUse)
+fakeEnergyConsumptions(Inicio, Fin, Periodo, _idUse, useEnergyFake)
 fakeEstimatedDeviation(Inicio, Fin, Periodo, _idUse)
